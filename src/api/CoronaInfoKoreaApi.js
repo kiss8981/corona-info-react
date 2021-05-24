@@ -8,6 +8,8 @@ import LogoImg  from '../img/logoimg.png'
 function CoronaInfoKoreaApi() {
     const serviceKey = "" //https://api.corona-19.kr/
 
+    const serviceKey = "" //https://api.corona-19.kr/
+
     const [info, setInfo] = useState([]);
     const [todayInfo, setTodayInfo] = useState([]);
     const [error, setError] = useState(null);
