@@ -6,6 +6,7 @@ import LogoImg  from '../img/logoimg.png'
 
 
 function CoronaInfoKoreaApi() {
+    const serviceKey = "" //https://api.corona-19.kr/
 
     const [info, setInfo] = useState([]);
     const [todayInfo, setTodayInfo] = useState([]);
@@ -13,8 +14,8 @@ function CoronaInfoKoreaApi() {
 
     const [loading, setLoading] = useState(false);
 
-    const url = "https://api.corona-19.kr/korea/?serviceKey=9KhsMFNLkCTrIu7HDc8tROzVeYxX1pGJE";
-    const url2 = "https://api.corona-19.kr/korea/country/new/?serviceKey=9KhsMFNLkCTrIu7HDc8tROzVeYxX1pGJE"
+    const url = `https://api.corona-19.kr/korea/?serviceKey=${serviceKey}`;
+    const url2 = `https://api.corona-19.kr/korea/country/new/?serviceKey=${serviceKey}`
     const apiRequest = async () => {
         try {
           // 요청이 시작 할 때에는 error 와 users 를 초기화하고

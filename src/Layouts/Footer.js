@@ -11,7 +11,7 @@ const Footer = () => {
                         <div className="flex flex-col">
                             <span className="font-bold text-white uppercase mt-4 md:mt-0 mb-2">코로나</span>
                             <span className="my-2"><a href="/" className="text-white text-md hover:text-blue-500">홈</a></span>
-                            <span className="my-2"><a href="/coronainfo" className="text-white text-md hover:text-blue-500">확진자 정보</a></span>
+                            <span className="my-2"><a href="/info" className="text-white text-md hover:text-blue-500">확진자 정보</a></span>
                             <span className="my-2"><a href="/mask" className="text-white text-md hover:text-blue-500">마스크 정보</a></span>
                         </div>
                     </div>
