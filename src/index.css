@@ -1,13 +1,84 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+  font-family: 'twayair';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_tway@1.0/twayair.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+.logo {
+  max-width: 13%;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.mainPageHr {
+  color: white;
+  background-color: white;
+  max-width: 20%;
+}
+
+.w-screen {
+  background: #212529
+}
+
+.logotext {
+  font-size: 20px;
+  color: white;
+  font-family: twayair;
+}
+
+
+.card {
+  margin-top: 20px;
+  transition: all .2s ease-in-out;
+  z-index: 10;
+  background-color: #D8E5C4;
+}
+
+.jumbotron {
+  z-index: 0;
+}
+
+.CardColumns {
+  margin-left: 50;
+}
+
+.card:hover {
+  margin-top: 20px;
+  transform: scale(1.02);
+  z-index: 10;
+}
+
+.header {
+  position: relative;
+}
+
+.question:hover {
+  color: gray;
+}
+
+.body {
+  font-family: 'Nanum Gothic Coding', monospace;
+}
+
+
+
+
+.loding-img {
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .loding-img {
+    animation: App-logo-spin infinite 3s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
