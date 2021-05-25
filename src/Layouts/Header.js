@@ -7,7 +7,8 @@ import LogoImg  from '../img/logoimg.png'
 const navigation = [
     { name: '홈', href: '/', current: false },
     { name: '마스크 정보', href: '/mask', current: false },
-    { name: '확진자 정보', href: '/info', current: false }
+    { name: '확진자 정보', href: '/info', current: false },
+    { name: '나라별 정보', href: '/countries', current: false }
   ]
   
   function classNames(...classes) {

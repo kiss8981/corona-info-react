@@ -13,6 +13,7 @@ const Footer = () => {
                             <span className="my-2"><a href="/" className="text-white text-md hover:text-blue-500">홈</a></span>
                             <span className="my-2"><a href="/info" className="text-white text-md hover:text-blue-500">확진자 정보</a></span>
                             <span className="my-2"><a href="/mask" className="text-white text-md hover:text-blue-500">마스크 정보</a></span>
+                            <span className="my-2"><a href="/countries" className="text-white text-md hover:text-blue-500">나라별 정보</a></span>
                         </div>
                     </div>
                 </div>

@@ -12,8 +12,9 @@ class home extends Component {
       <>
 
         <Container>
+        <div style={{margin: "5%"}}></div>
           <CoronaInfoKoreaApi/>
-          <div style={{margin: "15%"}}></div>
+          <div style={{margin: "10%"}}></div>
           <CoronaInfoCountries/>
           <div style={{margin: "10%"}}></div>
           <NewsCrawlerApi/>

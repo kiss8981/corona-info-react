@@ -42,7 +42,7 @@ function NewsInfoApi() {
       <>
         <div className="text-white justify-center items-center text-center">
         <span className="text-5xl text-center">뉴스</span>
-        
+        <div className="mb-5"></div>
         <div className="newscard">
           {info.map(({ title, description, originallink, pubDate }) => (
             <div key={pubDate} className="newscardinfo flex flex-1 justify-center items-center"> 
@@ -56,7 +56,7 @@ function NewsInfoApi() {
                 <p className="mt-2 text-gray-400">{pubDate}</p>
               </div>
               <div className="flex justify-end mt-4">
-                <a href={originallink} class="text-xl font-medium text-indigo-500">추가정보</a>
+                <a href={originallink} target='_blank' class="text-xl font-medium text-indigo-500">추가정보</a>
               </div>
             </div>
             </div>

@@ -64,14 +64,6 @@
   page-break-inside: avoid;
 }
 
-.newscard {
-  page-break-inside: avoid;
-  -webkit-column-count: 2;
-  -moz-column-count: 2;
-  column-count : 2;
-  position: relative;
-}
-
 .card-Text {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -130,5 +122,118 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+
+/* 스마트폰 가로+세로 */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px){
+  .newscard {
+    page-break-inside: avoid;
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count : 1;
+    position: relative;
+  }
+}
+
+ /* 스마트폰 가로 */
+@media only screen and (min-width : 321px) {
+  .newscard {
+    page-break-inside: avoid;
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count : 2;
+    position: relative;
+  }
+}
+
+ /* 스마트폰 세로 */
+@media only screen and (max-width : 320px) {
+  .newscard {
+    page-break-inside: avoid;
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count : 1;
+    position: relative;
+  }
+}
+
+/* iPhone4와 같은 높은 크기 세로 */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+  .newscard {
+    page-break-inside: avoid;
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count : 1;
+    position: relative;
+  }
+}
+
+/* iPhone4와 같은 높은 해상도 가로 */
+@media only screen and (min-width : 640px) {
+  .newscard {
+    page-break-inside: avoid;
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count : 1;
+    position: relative;
+  }
+}
+
+/* iPad 가로+세로 */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+  .newscard {
+    page-break-inside: avoid;
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count : 1;
+    position: relative;
+  }
+}
+
+/* iPad 가로 */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+  .newscard {
+    page-break-inside: avoid;
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count : 2;
+    position: relative;
+  }
+}
+
+/* iPad 세로 */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+  .newscard {
+    page-break-inside: avoid;
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count : 1;
+    position: relative;
+  }
+}
+
+/* 데스크탑 브라우저 가로 */
+@media only screen and (min-width : 1224px) {
+  .newscard {
+    page-break-inside: avoid;
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count : 2;
+    position: relative;
+  }
+}
+
+/* 큰 모니터 */
+@media only screen and (min-width : 1824px) {
+  .newscard {
+    page-break-inside: avoid;
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count : 2;
+    position: relative;
   }
 }
