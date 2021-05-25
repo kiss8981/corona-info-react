@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Line, Doughnut } from 'react-chartjs-2'
+import { Bar, Doughnut } from 'react-chartjs-2'
 import axios from 'axios'
 import LogoImg  from '../img/logoimg.png'
 
@@ -102,14 +102,8 @@ function CoronaInfoCountries() {
   return (
       <>
       <div className="flex flex-col text-white mb-5 mt-5 justify-center items-center text-center">
-            <span className="text-5xl text-center mb-5 text-white">국내 코로나 현황</span>
-            <div className="flex flex-col items-center justify-center">
-                <Line data={confirmData} options= {
-                    { title: { display: true, text: "누적 확진자 추이", fontSize: 16 }},
-                    { legend: { display: true, position: "bottom"} }
-                }/>
-            </div>
-            <div className="flex flex-col items-center justify-center mt-3">
+            <span className="text-5xl text-center text-white">국내 코로나 현황</span>
+            <div className="flex flex-col items-center justify-center mt-5 mb-5">
                 <Doughnut data={comparedData} options= {
                     { title: { display: true, text: `누적 확진, 격리 헤제, 사망 (${new Date().getMonth()+1}월)`, fontSize: 16 }},
                     { legend: { display: true, position: "bottom"} }
