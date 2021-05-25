@@ -36,27 +36,27 @@ function CoronaInfoKoreaApi() {
     return (
         <div className="flex flex-col text-white mb-5">
             <div className="flex flex-row mb-5 justify-center mt-5 text-center">
-                <span className="text-5xl text-center">오늘의 코로나</span>
+                <span className="text-5xl text-center"><i className="fas fa-bullhorn"></i>&nbsp;오늘의 코로나</span>
             </div>
             <div className="flex flex-row rounded-2xl justify-center custom-color"> 
-                <div className="flex flex-col mr-3"><span className="text-gray-500 text-base md:text-xl">총 확진자</span>
-                    <div className="flex flex-col md:flex-row md:items-center">
-                        <span class="notosans-black text-white text-xl md:text-4xl"><CountUp separator="," end={countryInfo.cases}/>명</span>
-                        <span className="notosans-black text-white text-l md:text-2xl">[+ <CountUp separator="," end={countryInfo.todayCases}/>명]</span>
+                <div className="flex flex-col mr-3"><span className="text-gray-500 text-base md:text-xl"><i className="fas fa-user"></i>&nbsp;총 확진자</span>
+                    <div className="flex flex-col md:flex-row md:items-center justify-center">
+                        <span className="notosans-black text-white text-xl md:text-4xl"><CountUp separator="," end={countryInfo.cases}/>명</span>&nbsp;
+                        <span className="badge badge-secondary text-xl "><i className="fas fa-plus"></i>&nbsp;<CountUp separator="," end={countryInfo.todayCases}/>명</span>
                         <div className="border-b md:border-b-0 w-1/6 md:w-0 md:h-4/5 my-2 md:my-0 md:border-r pr-4 border-gray-500"></div>
                     </div>
                 </div>
-                <div className="flex flex-col mr-3"><span className="text-gray-500 text-base md:text-xl">격리해제</span>
+                <div className="flex flex-col mr-3"><span className="text-gray-500 text-base md:text-xl"><i className="fas fa-user-check"></i>&nbsp;격리해제</span>
                     <div className="flex flex-col md:flex-row md:items-center">
-                        <span className="notosans-black text-white text-xl md:text-4xl"><CountUp separator="," end={countryInfo.recovered}/>명</span>
-                        <span className="notosans-black text-white text-l md:text-2xl">[+ <CountUp separator="," end={countryInfo.todayRecovered}/>명]</span>
+                        <span className="notosans-black text-white text-xl md:text-4xl"><CountUp separator="," end={countryInfo.recovered}/>명</span>&nbsp;
+                        <span className="badge badge-secondary text-xl "><i className="fas fa-plus"></i>&nbsp;<CountUp separator="," end={countryInfo.todayRecovered}/>명</span>
                         <div className="border-b md:border-b-0 w-1/6 md:w-0 md:h-4/5 my-2 md:my-0 md:border-r pr-4 border-gray-500"></div>
                     </div>
                 </div>
-                <div className="flex flex-col mr-3"><span className="text-gray-500 text-base md:text-xl">사망자</span>
+                <div className="flex flex-col mr-3"><span className="text-gray-500 text-base md:text-xl"><i className="fas fa-user-times"></i>&nbsp;사망자</span>
                     <div className="flex flex-col md:flex-row md:items-center">
-                        <span className="notosans-black text-white text-xl md:text-4xl"><CountUp separator="," end={countryInfo.deaths}/>명</span>
-                        <span className="notosans-black text-white text-l md:text-2xl">[+ <CountUp separator="," end={countryInfo.todayDeaths}/>명]</span>
+                        <span className="notosans-black text-white text-xl md:text-4xl"><CountUp separator="," end={countryInfo.deaths}/>명</span>&nbsp;
+                        <span className="badge badge-secondary text-xl "><i className="fas fa-plus"></i>&nbsp;<CountUp separator="," end={countryInfo.todayDeaths}/>명</span>
                         <div className="border-b md:border-b-0 w-1/6 md:w-0 md:h-4/5 my-2 md:my-0 md:border-r pr-4 border-gray-500"></div>
                     </div>
                 </div>

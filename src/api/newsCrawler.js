@@ -15,7 +15,7 @@ function NewsInfoApi() {
             setInfo(null);
             // loading 상태를 true 로 바꿉니다.
             setLoading(true);
-            const response = await axios.get('http://192.168.0.3:8081/coronanews');
+            const response = await axios.get('http://audiscordbot.xyz:8081/coronanews');
             setInfo(response.data.items);
         } catch (error) { 
             console.log(error); 
@@ -29,7 +29,7 @@ function NewsInfoApi() {
 
     if (loading) return (
         <div className="flex flex-col text-white mb-5 justify-center items-center text-center">
-            <div className="flex flex-row mb-5 justify-center mt-5 text-center"><b>뉴스</b>
+            <div className="flex flex-row mb-5 justify-center mt-5 text-center">
                 <span className="text-5xl text-center">뉴스</span>
             </div>
             <img src={LogoImg} className="loding-img block h-8 w-8 justify-center items-center mb-3" alt="loding" />
@@ -40,8 +40,8 @@ function NewsInfoApi() {
     if (!info) return null;
     return (
       <>
-        <div className="text-white justify-center items-center text-center">
-        <span className="text-5xl text-center">뉴스</span>
+        <div id="newssel" className="text-white justify-center items-center text-center">
+        <span className="text-5xl text-center"><i className="far fa-newspaper"></i>&nbsp;관련뉴스</span>
         <div className="mb-5"></div>
         <div className="newscard">
           {info.map(({ title, description, originallink, pubDate }) => (
@@ -53,10 +53,10 @@ function NewsInfoApi() {
               <div>
                 <h2 className="text-gray-800 text-3xl font-semibold mt-5"dangerouslySetInnerHTML={{__html: title}}></h2>
                 <p className="mt-2 text-gray-600" dangerouslySetInnerHTML={{__html: description}}></p>
-                <p className="mt-2 text-gray-400">{pubDate}</p>
+                <p className="mt-2 text-gray-400"><i className="fas fa-calendar-alt"></i>&nbsp;{pubDate}</p>
               </div>
               <div className="flex justify-end mt-4">
-                <a href={originallink} target='_blank' class="text-xl font-medium text-indigo-500">추가정보</a>
+                <a href={originallink} target='_blank' className="text-xl font-medium text-indigo-500"><i className="fas fa-plus"></i>&nbsp;추가정보</a>
               </div>
             </div>
             </div>

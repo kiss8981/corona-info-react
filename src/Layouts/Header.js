@@ -9,11 +9,11 @@ const navigation = [
     { name: '마스크 정보', href: '/mask', current: false },
     { name: '확진자 정보', href: '/info', current: false },
     { name: '나라별 정보', href: '/countries', current: false }
-  ]
+]
   
-  function classNames(...classes) {
-    return classes.filter(Boolean).join(' ')
-  }
+function classNames(...classes) {
+  return classes.filter(Boolean).join(' ')
+}
   
 
 const Header = () => {
@@ -21,7 +21,6 @@ const Header = () => {
         <>
         <header>
             <Disclosure as="nav" className="bg-current" style={{backgroundColor: "#36393f", width: "100%"}}>
-
         {({ open }) => (
             <>
             <Container>

@@ -4764,9 +4764,9 @@ input[type=submit].btn-block {
 }
 .badge {
     display: inline-block;
-    padding: 0.6em 1.2em;
-    font-size: 75%;
-    font-weight: 400;
+    padding: 0.4em 0.45em;
+    font-size: 100%;
+    font-weight: 500;
     line-height: 1;
     text-align: center;
     white-space: nowrap;
@@ -4811,12 +4811,12 @@ a.badge-primary:focus {
 }
 .badge-secondary {
     color: #fff;
-    background-color: #adb5bd;
+    background-color: rgb(60, 60, 63);
 }
 a.badge-secondary:focus,
 a.badge-secondary:hover {
     color: #fff;
-    background-color: #919ca6;
+    background-color: rgb(60, 60, 63);
 }
 a.badge-secondary.focus,
 a.badge-secondary:focus {

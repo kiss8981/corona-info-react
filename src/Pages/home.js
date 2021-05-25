@@ -4,13 +4,10 @@ import CoronaInfoKoreaApi from '../api/CoronaInfoKoreaApi'
 import NewsCrawlerApi from '../api/newsCrawler'
 import CoronaInfoCountries from '../api/CoronaInfoCountries'
 
-import 'holderjs';
-
 class home extends Component {
   render() {
     return (
       <>
-
         <Container>
         <div style={{margin: "5%"}}></div>
           <CoronaInfoKoreaApi/>
