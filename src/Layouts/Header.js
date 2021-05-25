@@ -16,7 +16,6 @@ const navigation = [
   
 
 const Header = () => {
-    console.clear()
     return (
         <>
         <header>

@@ -50,7 +50,7 @@ function NewsInfoApi() {
             <Card className="card">
               <Card.Img variant="top" src="holder.js/100px180" />
               <Card.Body>
-                <Card.Title>{info}</Card.Title>
+                <Card.Title>Test</Card.Title>
                 <Card.Text>
                 뉴스 1 내용{" "}
                 </Card.Text>
@@ -63,7 +63,7 @@ function NewsInfoApi() {
             <Card className="card">
               <Card.Img variant="top" src="holder.js/100px180" />
               <Card.Body>
-                <Card.Title>뉴스 2</Card.Title>
+                <Card.Title>Test</Card.Title>
                 <Card.Text>
                 뉴스 2 내용{" "}
                 </Card.Text>
