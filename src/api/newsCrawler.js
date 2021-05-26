@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import { Card, CardColumns, Button} from 'react-bootstrap';
 import LogoImg  from '../img/logoimg.png'
 
 function NewsInfoApi() {
@@ -45,7 +44,7 @@ function NewsInfoApi() {
         <div className="mb-5"></div>
         <div className="newscard">
           {info.map(({ title, description, originallink, pubDate }) => (
-            <div key={pubDate} className="newscardinfo flex flex-1 justify-center items-center"> 
+            <div key={title} className="newscardinfo flex flex-1 justify-center items-center"> 
               <div className="max-w-md py-4 px-8 bg-white shadow-lg rounded-lg my-5">
               <div className="flex justify-center md:justify-end -mt-16">
                 <img src={LogoImg} className="w-20 h-20 object-cover rounded-full border-2 border-indigo-500"></img>
