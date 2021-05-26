@@ -20,7 +20,7 @@ const Header = () => {
     return (
         <>
         <header>
-            <Disclosure as="nav" className="bg-current" style={{backgroundColor: "#36393f", width: "100%"}}>
+            <Disclosure as="nav" className="bg-current" style={{backgroundColor: "#36393f", width: "100%", position: "fixed", zIndex: "1030", justifyContent: "space-between", display:"flex"}}>
         {({ open }) => (
             <>
             <Container>
