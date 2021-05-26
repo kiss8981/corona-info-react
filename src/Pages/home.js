@@ -9,9 +9,9 @@ class home extends Component {
     return (
       <>
         <Container>
-        <div style={{margin: "5%"}}></div>
+        <div style={{margin: "4%"}}></div>
           <CoronaInfoKoreaApi/>
-          <div style={{margin: "10%"}}></div>
+          <div style={{margin: "8%"}}></div>
           <CoronaInfoCountries/>
           <div style={{margin: "10%"}}></div>
           <NewsCrawlerApi/>

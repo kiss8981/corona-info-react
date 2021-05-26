@@ -20,7 +20,7 @@ const Header = () => {
     return (
         <>
         <header>
-            <Disclosure as="nav" className="bg-current" style={{backgroundColor: "#36393f", width: "100%", position: "fixed", zIndex: "1030", justifyContent: "space-between", display:"flex"}}>
+            <Disclosure as="nav" className="bg-current" style={{backgroundColor: "#36393f", width: "100%", position: "fixed", zIndex: "1030", justifyContent: "space-between"}}>
         {({ open }) => (
             <>
             <Container>
@@ -30,7 +30,7 @@ const Header = () => {
                 <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                     {/* Mobile menu button*/}
                     <Disclosure.Button className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
-                    <span className="sr-only">Open main menu</span>
+                    <span className="sr-only">메인매뉴</span>
                     {open ? (
                         <XIcon className="block h-6 w-6" aria-hidden="true" />
                     ) : (

@@ -69,5 +69,5 @@ export default function Map() {
     }
   }, 1000);
 
-  return <div id="map" className="flex flex-col text-black justify-center items-center text-center mb-5" style={{ width: "85%", height: "79vh", color: "black" }}></div>;
+  return <div id="map" className="flex flex-col text-black justify-center items-center text-center mb-5" style={{ width: "85%", height: "82vh", color: "black" }}></div>;
 }

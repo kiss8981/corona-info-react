@@ -6,6 +6,9 @@ import LogoImg  from '../img/logoimg.png'
 function CoronaInfoCountries() {
     const [confirmData, setconfirmData] = useState();
     const [comparedData, setComparedData] = useState();
+    const [updateYear, setupdateYear] = useState();
+    const [updateMonth, setupdateMonth] = useState();
+    const [updateDate, setupdateDate] = useState();
     const [error, setError] = useState(null);
     const [loading, setLoading] = useState(false);
 
@@ -24,6 +27,9 @@ function CoronaInfoCountries() {
                 const year = currentDate.getFullYear();
                 const month = currentDate.getMonth();
                 const date = currentDate.getDate();
+                setupdateYear(year);
+                setupdateMonth(month);
+                setupdateDate(date);
                 const confirmed = cur.Confirmed;
                 const active = cur.Active;
                 const death = cur.Deaths;
@@ -108,6 +114,7 @@ return (
                     { legend: { display: true, position: "bottom"} }
                 }/>
             </div>
+            <span className="text-1xl text-center text-white"><i class="fas fa-calendar-alt"></i> 코로나바이러스감염증-19 국내 발생현황 ({updateMonth}.{updateDate} 00시 기준)</span>
         </div>
     </>
   )      
