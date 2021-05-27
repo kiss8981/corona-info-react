@@ -5,8 +5,8 @@ import LogoImg  from '../img/logoimg.png'
 function NewsInfoApi() {
     const [info, setInfo] = useState([]);
     const [error, setError] = useState(null);
-
     const [loading, setLoading] = useState(false);
+    
     const getNewsInfo = async () => { 
         try {
             // 요청이 시작 할 때에는 error 와 users 를 초기화하고
@@ -27,7 +27,7 @@ function NewsInfoApi() {
       }, []);
 
     if (loading) return (
-        <div className="flex flex-col text-white justify-center items-center text-center" style={{marginTop: "15%", marginBottom: "25%"}}>
+        <div className="flex flex-col text-white justify-center items-center text-center" style={{marginTop: "1%", marginBottom: "25%"}}>
             <div className="flex flex-row mb-5 justify-center mt-5 text-center">
                 <span className="text-5xl text-center">뉴스</span>
             </div>
