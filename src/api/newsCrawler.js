@@ -19,7 +19,7 @@ function NewsInfoApi() {
         } catch (error) { 
             console.log(error); 
         }
-      setLoading(false);
+        setLoading(false);
     };
 
       useEffect(() => {
@@ -27,8 +27,8 @@ function NewsInfoApi() {
       }, []);
 
     if (loading) return (
-        <div className="flex flex-col text-white justify-center items-center text-center" style={{marginTop: "1%"}}>
-            <img src={LogoImg} className="loding-img block h-8 w-8 mt-4 justify-center items-center mb-3" alt="loding" />
+        <div className="flex flex-col text-white justify-center items-center text-center" style={{marginBottom: "50%"}}>
+            <img src={LogoImg} className="loding-img block h-8 w-8 mt-4 justify-center items-center " alt="loding" />
             정보 불러오는중..
         </div>
     );
