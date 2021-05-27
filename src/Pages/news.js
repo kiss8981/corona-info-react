@@ -16,7 +16,10 @@ class maskPage extends Component {
                 <meta property="og:site_name" content="코로나 정보"/>
         </Helmet>
         <Container>
+        <div id="newssel" className="text-white justify-center mt-2 items-center text-center">
+        <span className="text-4xl text-center">관련 뉴스</span>
           <NewsCrawlerApi/>
+        </div>
         </Container>
       </>
     );

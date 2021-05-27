@@ -25,15 +25,6 @@ function CoronaInfoCountries() {
     });
   }, []);
 
-  if (loading) return (
-    <div className="flex flex-col text-white mb-5 justify-center items-center text-center">
-        <div className="flex flex-row mb-5 justify-center mt-5 text-center">
-            <span className="text-5xl text-center">전세계 확진자</span>
-        </div>
-        <img src={LogoImg} className="loding-img block h-8 w-8 justify-center items-center mb-3" alt="loding" />
-        정보 불러오는중..
-    </div>
-    );
   if (error) return <div>{error}</div>;
   if (!countries) return null;  
 
@@ -47,8 +38,8 @@ function CoronaInfoCountries() {
                 <meta property="og:site_name" content="코로나 정보"/>
     </Helmet>
       <Container>
-      <div className="flex flex-col text-white mb-5 mt-5 justify-center items-center text-center">
-            <span className="text-5xl text-center">전세계 확진자</span>
+      <div className="flex flex-col text-white mb-5 mt-2 justify-center items-center text-center">
+            <span className="text-4xl text-center">전세계 확진자</span>
         </div>
         <CardColumns>
           {countries.map(({ country, cases, countryInfo, continent }) => (
@@ -65,7 +56,7 @@ function CoronaInfoCountries() {
                 </Card.Footer>
               </Card>
           ))}
-          </CardColumns>
+        </CardColumns>
     </Container>
     </>
   );

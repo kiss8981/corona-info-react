@@ -6,7 +6,7 @@ function NewsInfoApi() {
     const [info, setInfo] = useState([]);
     const [error, setError] = useState(null);
     const [loading, setLoading] = useState(false);
-    
+
     const getNewsInfo = async () => { 
         try {
             // 요청이 시작 할 때에는 error 와 users 를 초기화하고
@@ -27,11 +27,8 @@ function NewsInfoApi() {
       }, []);
 
     if (loading) return (
-        <div className="flex flex-col text-white justify-center items-center text-center" style={{marginTop: "1%", marginBottom: "25%"}}>
-            <div className="flex flex-row mb-5 justify-center mt-5 text-center">
-                <span className="text-5xl text-center">뉴스</span>
-            </div>
-            <img src={LogoImg} className="loding-img block h-8 w-8 justify-center items-center mb-3" alt="loding" />
+        <div className="flex flex-col text-white justify-center items-center text-center" style={{marginTop: "1%"}}>
+            <img src={LogoImg} className="loding-img block h-8 w-8 mt-4 justify-center items-center mb-3" alt="loding" />
             정보 불러오는중..
         </div>
     );
@@ -39,8 +36,6 @@ function NewsInfoApi() {
     if (!info) return null;
     return (
       <>
-        <div id="newssel" className="text-white justify-center items-center text-center">
-        <span className="text-5xl text-center"><i className="far fa-newspaper"></i>&nbsp;관련뉴스</span>
         <div className="mb-5"></div>
         <div className="newscard">
           {info.map(({ title, description, originallink, pubDate }) => (
@@ -60,7 +55,6 @@ function NewsInfoApi() {
             </div>
             </div>
           ))}
-        </div>
         </div>
       </>
     );
