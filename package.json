@@ -26,10 +26,11 @@
     "web-vitals": "^1.0.1"
   },
   "scripts": {
-    "start": "set PORT=8080 &&craco start",
+    "start": "set PORT=3000 &&craco start",
     "build": "craco build",
     "test": "craco test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "pm2": "pm2 delete homepage || pm2 serve --spa start --name hompage"
   },
   "eslintConfig": {
     "extends": [

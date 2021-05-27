@@ -7,13 +7,16 @@ const { kakao } = window;
 export default function Map() {
   const [confirmData, setconfirmData] = useState({});
   const [loading, setLoading] = useState();  
+  const [mapView, setmapView] = useState(); 
   const [error, setError] = useState();
 
   useEffect(async() => {
     setLoading(true);
+    setmapView(false)
     const response = await axios.get('https://coroname.me/getdata');
     setconfirmData(response.data.data)
     setLoading(false);
+    setmapView(true);
   }, []);
 
   if (loading) return (
@@ -24,7 +27,8 @@ export default function Map() {
         정보 불러오는중..
     </div>
     );
-  setTimeout(function(){
+
+  if (mapView) {
     let container = document.getElementById("map");
     let options = {
       center: new kakao.maps.LatLng(35.807820, 127.945856),
@@ -67,7 +71,7 @@ export default function Map() {
             infowindow.close();
         };
     }
-  }, 1000);
+  };
 
   return <div id="map" className="flex flex-col text-black justify-center items-center text-center mb-5" style={{ width: "85%", height: "82vh", color: "black" }}></div>;
 }
