@@ -36,7 +36,7 @@ function CoronaInfoKoreaApi() {
     return (
         <div className="flex flex-col text-white mb-5">
             <div className="flex flex-row mb-5 justify-center mt-1 text-center">
-                <span className="text-5xl text-center"><i className="fas fa-bullhorn"></i>&nbsp;오늘의 코로나</span>
+                <span className="text-4xl text-center"><i className="fas fa-bullhorn"></i>&nbsp;오늘의 코로나</span>
             </div>
             <div className="flex flex-row rounded-2xl justify-center custom-color"> 
                 <div className="flex flex-col mr-3"><span className="text-gray-500 text-base md:text-xl"><i className="fas fa-user"></i>&nbsp;총 확진자</span>

@@ -96,7 +96,7 @@ function CoronaInfoCountries() {
   if (error) return (
     <div className="flex flex-col text-white mb-5 justify-center items-center text-center">
         <div className="flex flex-row mb-5 justify-center mt-5 text-center">
-            <span className="text-5xl text-center">국내 코로나 현황</span>
+            <span className="text-4xl text-center">국내 코로나 현황</span>
         </div>
         <p>에러발생 {error}</p>
     </div>
@@ -107,14 +107,14 @@ return (
     
     <>
     <div className="flex flex-col text-white mb-5 mt-5 justify-center items-center text-center">
-            <span className="text-5xl text-center text-white"><i className="fas fa-flag"></i>&nbsp; 국내 코로나 현황</span>
+            <span className="text-4xl text-center text-white"><i className="fas fa-flag"></i>&nbsp;국내 코로나 현황</span>
             <div className="flex flex-col items-center justify-center mt-5 mb-5">
                 <Doughnut data={comparedData} options= {
                     { title: { display: true, text: `누적 확진, 격리 헤제, 사망 (${new Date().getMonth()+1}월)`, fontSize: 16 }},
                     { legend: { display: true, position: "bottom"} }
                 }/>
             </div>
-            <span className="text-1xl text-center text-white"><i class="fas fa-calendar-alt"></i> 코로나바이러스감염증-19 국내 발생현황 ({updateMonth}.{updateDate} 00시 기준)</span>
+            <span className="text-1xl text-center text-white"><i className="fas fa-calendar-alt"></i>&nbsp;코로나바이러스감염증-19 국내 발생현황 ({updateMonth}.{updateDate} 00시 기준)</span>
         </div>
     </>
   )      

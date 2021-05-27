@@ -1,7 +1,7 @@
 import { Route, BrowserRouter } from 'react-router-dom';
 import Layout from './Layouts/Layout';
 import Home from './Pages/home'
-import maskPage from './Pages/mask'
+import News from './Pages/news'
 import coronainfo from './Pages/ConfirmInfo'
 import CoronaInfoCountries from './Pages/ConronaInfoAllContries'
 
@@ -12,7 +12,7 @@ function App() {
     <BrowserRouter>
       <Layout>
           <Route exact path="/" component={Home}/>
-          <Route exact path="/mask" component={maskPage}/>
+          <Route exact path="/news" component={News}/>
           <Route exact path="/info" component={coronainfo}/>
           <Route exact path="/countries" component={CoronaInfoCountries}/>
       </Layout>

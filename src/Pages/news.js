@@ -1,13 +1,15 @@
 import React, { Component } from 'react';
+import { Container } from 'react-bootstrap'
+import NewsCrawlerApi from '../api/newsCrawler'
 
 class maskPage extends Component {
 
   render() {
     return (
       <>
-        <div>
-            <h3> Mask Page </h3>
-        </div>
+        <Container>
+          <NewsCrawlerApi/>
+        </Container>
       </>
     );
   }
