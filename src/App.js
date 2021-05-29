@@ -9,7 +9,7 @@ import ConronaInfoAllContries from './Pages/ConronaInfoAllContries'
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Layout>
           <Route exact path="/" component={Home}/>
           <Route exact path="/news" component={News}/>

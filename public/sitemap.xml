@@ -1,0 +1,14 @@
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<url>
+<loc>http://ec2-3-128-26-189.us-east-2.compute.amazonaws.com/info</loc>
+</url>
+<url>
+<loc>http://ec2-3-128-26-189.us-east-2.compute.amazonaws.com/countries</loc>
+</url>
+<url>
+<loc>http://ec2-3-128-26-189.us-east-2.compute.amazonaws.com/news</loc>
+</url>
+<url>
+<loc>http://ec2-3-128-26-189.us-east-2.compute.amazonaws.com/</loc>
+</url>
+</urlset>

@@ -14,7 +14,7 @@ class coronaInfo extends Component {
                 <meta name="description" property="og:description" content="코로나 관련 국내 확진자 정보를 쉽게 확인할 수 있습니다"/>
                 <meta property="og:site_name" content="코로나 정보"/>
           </Helmet>
-        <div className="flex flex-col text-white justify-center items-center text-center" style={{marginBottom: "40%"}}>
+        <div className="flex flex-col text-white justify-center items-center text-center">
         <span className="text-4xl text-center mt-2 mb-4">국내 확진자 정보</span>
         <Map/>
         </div>
