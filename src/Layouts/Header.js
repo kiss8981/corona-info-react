@@ -2,7 +2,6 @@ import React from 'react'
 import { Disclosure } from '@headlessui/react'
 import { MenuIcon, XIcon } from '@heroicons/react/outline'
 import { Container } from 'react-bootstrap'
-import LogoImg  from '../img/logoimg.png'
 
 const navigation = [
     { name: '홈', href: '/', current: false },
@@ -40,16 +39,7 @@ const Header = () => {
                 </div>
                 <div className="flex-1 logotext flex items-center justify-center sm:items-stretch sm:justify-start">
                     <div className="flex-shrink-0 flex items-center">
-                    <img
-                        className="block lg:hidden h-8 w-auto"
-                        src={LogoImg}
-                        alt="Logo"
-                    />
-                    <img
-                        className="hidden lg:block h-8 w-auto"
-                        src={LogoImg}
-                        alt="Workflow"
-                    />&nbsp;코로나 정보
+                        코로나 정보
                     </div>
                     <div className="hidden sm:block sm:ml-6">
                     <div className="flex space-x-4">
