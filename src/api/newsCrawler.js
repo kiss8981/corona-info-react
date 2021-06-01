@@ -16,7 +16,7 @@ function NewsInfoApi() {
             setInfo(null);
             // loading 상태를 true 로 바꿉니다.
             setLoading(true);
-            const response = await axios.get('http://ec2-52-78-66-143.ap-northeast-2.compute.amazonaws.com:8081/coronanews');
+            const response = await axios.get('https://api.audiscordbot.xyz/coronanews');
             setInfo(response.data.items);
         } catch (error) { 
             console.log(error); 
