@@ -75,6 +75,9 @@
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.contriesinfo {
+  width: 50vw;
+}
 
 .header {
   position: relative;
@@ -103,8 +106,6 @@
 .scroll::-webkit-scrollbar-track {
   background: None;
 }
-
-
 
 .loding-img {
   pointer-events: none;

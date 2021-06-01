@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import LodingPage from '../utills/Loding'
 import LogoImg  from '../img/logoimg.png'
+
 
 function NewsInfoApi() {
     const [info, setInfo] = useState([]);
@@ -19,7 +21,7 @@ function NewsInfoApi() {
         } catch (error) { 
             console.log(error); 
         }
-        setLoading(false);
+      setLoading(false)
     };
 
       useEffect(() => {
@@ -27,10 +29,7 @@ function NewsInfoApi() {
       }, []);
 
     if (loading) return (
-        <div className="flex flex-col text-white justify-center items-center text-center" style={{marginBottom: "50%"}}>
-            <img src={LogoImg} className="loding-img block h-8 w-8 mt-4 justify-center items-center " alt="loding" />
-            정보 불러오는중..
-        </div>
+        <LodingPage/>
     );
     if (error) return <div>{error}</div>;
     if (!info) return null;

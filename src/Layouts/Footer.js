@@ -3,7 +3,7 @@ import { Container} from 'react-bootstrap'
 
 const Footer = () => {
     return (
-        <footer className="footer bg-current relative pt-1" style={{backgroundColor: "#36393f"}}>
+        <footer className="footer bg-current relative pt-1" style={{backgroundColor: "#36393f" }}>
             <Container>
             <div className="container mx-auto px-6">
                 <div className="sm:flex sm:mt-5">

@@ -4446,6 +4446,10 @@ input[type=submit].btn-block {
 }
 .card {
     position: relative;
+    width: 15vw;
+    height: 35vh;
+    margin: 20px;
+    float: left;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: column;
