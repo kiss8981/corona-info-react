@@ -32,7 +32,6 @@
     "eject": "react-scripts eject",
     "postinstall": "npm install --prefix client",
     "build": "cd client && craco build"
-    }
   },
   "eslintConfig": {
     "extends": [
