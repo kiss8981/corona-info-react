@@ -30,7 +30,7 @@
     "start": "craco start",
     "test": "craco test",
     "eject": "react-scripts eject",
-    "postinstall": "npm install -g --prefix client",
+    "postinstall": "npm install -g && npm install --prefix client",
     "build": "cd client && craco build"
   },
   "eslintConfig": {
