@@ -33,7 +33,7 @@ function CoronaInfoCountries() {
       <CardColumns>
           {countries.map(({ country, cases, countryInfo, continent }) => (
               <Card className="card" key={country}>
-                <Card.Img variant="top" src={countryInfo.flag} style={{height: '18vh', width: '40vw'}}/>
+                <Card.Img variant="top" src={countryInfo.flag} style={{width: "50wh", height: "23vh"}}/>
                 <Card.Body>
                   <Card.Title>{country}</Card.Title>
                   <Card.Text>
